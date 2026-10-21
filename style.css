@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+.barra-topo{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 15px;
+     background-color: rgb(120, 138, 138);
+} 
+.barra-topo ul{
+    list-style: none;
+}
+.barra-topo li{
+    float: left;
+}
+.aviso{
+    position: relative;
+    padding: 12px;
+    margin: 8px;
+    background-color: red;
+}
+#fechar-aviso{
+    position: absolute;
+    top: 0;
+    right: 0;    
+}
+main p{
+    color: cadetblue;
+}
+.mensagem {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+/* Calculo do margin-top no main */
+/* A barra de topo tem um padding de 15px em cima e 15px embaixo, oq totaliza em 30px.
+    Somando o tamanho da linha dos textos, q tem de aproximadamente 24px, a barra tem mais ou menos 54px de altura.
+    Coloquei o margin-top de 70px no <main>. Assim o conteúdo começa bem abaixo da barra fixa não fica escondido por trás dela.
+*/
+main {
+    margin-top: 70px;
+    padding: 20px;
+}
